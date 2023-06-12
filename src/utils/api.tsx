@@ -6,7 +6,7 @@ interface UserProfile {
 }
 
 export const fetchUserProfile = (): Promise<UserProfile> => {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
       const user: UserProfile = {
         id: 1,
